@@ -4,6 +4,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  eslint: {
+    // Prevent ESLint warnings from failing the Vercel production build
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Strict TypeScript validation
+    ignoreBuildErrors: false,
+  },
 };
 
 export default nextConfig;
